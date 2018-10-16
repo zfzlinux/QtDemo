@@ -32,3 +32,13 @@ HEADERS += \
 
 FORMS += \
         mainwindow.ui
+#Add HIK SDK_win32 no win64
+INCLUDEPATH += \
+    $$PWD/3rdpacket/HIK/include \
+    $$PWD/3rdpacket/HIK/lib \
+    $$PWD/3rdpacket/HIK/lib/HCNetSDKCom \
+
+LIBS += \
+    -L$$PWD/3rdpacket/HIK/lib/ -lHCCore \
+    -L$$PWD/3rdpacket/HIK/lib/ -lHCNetSDK \
+    -L$$PWD/3rdpacket/HIK/lib/ -lPlayCtrl \
